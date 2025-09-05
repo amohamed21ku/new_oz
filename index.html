@@ -18,8 +18,7 @@
 
   <meta charset="UTF-8">
   <meta content="IE=Edge" http-equiv="X-UA-Compatible">
-  <meta name="description" content="OZ Business Management Application">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+  <meta name="description" content="A new Flutter project.">
 
   <!-- iOS meta tags & icons -->
   <meta name="apple-mobile-web-app-capable" content="yes">
@@ -30,16 +29,8 @@
   <!-- Favicon -->
   <link rel="icon" type="image/png" href="favicon.png"/>
 
-  <title>OZ Application</title>
+  <title>oz</title>
   <link rel="manifest" href="manifest.json">
-  
-  <!-- PWA Meta Tags -->
-  <meta name="theme-color" content="#0175C2">
-  <meta name="msapplication-TileColor" content="#0175C2">
-  <meta name="mobile-web-app-capable" content="yes">
-  <meta name="application-name" content="OZ">
-  <meta name="msapplication-tooltip" content="OZ Business Management">
-  <meta name="msapplication-starturl" content="/">
 
   <!-- CORS handling for images -->
   <script>
@@ -72,20 +63,6 @@
   </script>
 </head>
 <body>
-<script>
-  // Register service worker
-  if ('serviceWorker' in navigator) {
-    window.addEventListener('flutter-first-frame', function() {
-      navigator.serviceWorker.register('/sw.js')
-        .then((registration) => {
-          console.log('Service Worker registered successfully:', registration.scope);
-        })
-        .catch((error) => {
-          console.log('Service Worker registration failed:', error);
-        });
-    });
-  }
-</script>
 <script src="flutter_bootstrap.js" async></script>
 </body>
 </html>
